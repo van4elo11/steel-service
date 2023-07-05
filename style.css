@@ -443,7 +443,7 @@ header.smoled{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: center;
 	padding: 48px 0px 48px 48px;
 	width: 100%;
 	border-radius: 20px;
@@ -597,6 +597,7 @@ header.smoled{
 	flex-direction: column;
 }
 .question{
+	cursor: pointer;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -604,6 +605,7 @@ header.smoled{
 }
 
 .answer{
+	cursor: pointer;
 	max-height: 0px;
 	overflow: hidden;
 	padding: 0px 24px;
@@ -613,6 +615,7 @@ header.smoled{
 	cursor: pointer;
 }
 .faq_border{
+	cursor: pointer;
 	height: 1px;
 	width: 100%;
 	background-color: #808080;
@@ -762,7 +765,7 @@ footer{
 	padding: 32px 32px 48px 32px;
 	background-color: #fff;
 	flex-basis: 320px;
-	border-radius: 0px 24px 24px 0px;
+	border-radius: 24px 24px 24px 24px;
 	position: relative;
 	overflow: visible;
 }

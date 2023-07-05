@@ -92,3 +92,26 @@ window.onscroll = function() {
 
 
 
+// FORM
+$(document).ready(function() {
+  $('#modal-form, #contact-form').submit(function(event) {
+    event.preventDefault();
+    var form = $(this);
+
+    $.ajax({
+      url: 'send-email.php',
+      type: 'POST',
+      data: form.serialize(),
+      success: function(response) {
+        if (response === 'success') {
+          alert('Мы получили письмо, скоро перезвоним');
+        } else {
+          alert('Произошла ошибка, пожалуйста позвоните нам или напишите на почту orshasteelservis@mail.ru');
+        }
+      },
+      error: function() {
+        alert('Произошла ошибка, пожалуйста позвоните нам или напишите на почту orshasteelservis@mail.ru');
+      }
+    });
+  });
+});
