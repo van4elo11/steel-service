@@ -105,6 +105,7 @@ $(document).ready(function() {
       success: function(response) {
         if (response === 'success') {
           alert('Мы получили письмо, скоро перезвоним');
+          form[0].reset(); // Сбросить значения формы
         } else {
           alert('Произошла ошибка, пожалуйста позвоните нам или напишите на почту orshasteelservis@mail.ru');
         }
